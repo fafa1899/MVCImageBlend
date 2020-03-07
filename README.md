@@ -1,4 +1,5 @@
 [1. 概述](#1-概述)
+
 [2. 实现](#2-实现)
 - [2.1. 准备](#21-准备)
 - [2.2. 核心](#22-核心)
@@ -205,11 +206,11 @@
 [netlink2]:https://blog.csdn.net/charlee44/article/details/104696765
 [netlink3]:https://blog.csdn.net/charlee44/article/details/104662373
 
-[imglink1]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/1.png
-[imglink2]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/2.png
-[imglink3]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/3.png
-[imglink4]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/4.png
-[imglink5]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/5.png
-[imglink6]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/6.png
+[imglink1]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/1.PNG
+[imglink2]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/2.PNG
+[imglink3]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/3.PNG
+[imglink4]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/4.PNG
+[imglink5]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/5.PNG
+[imglink6]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/6.PNG
 [imglink7]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/7.jpg
-[imglink8]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/8.png
+[imglink8]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/8.PNG
