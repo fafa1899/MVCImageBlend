@@ -62,7 +62,7 @@ bool QImageShowWidget::LoadImage(const char* imagePath)
             for(int bi = 0; bi < winBandNum; bi++)
             {
                 size_t m = (size_t) winWidth * winBandNum * ri + winBandNum * ci + bi;
-                size_t n = (size_t) srcImg.cols * winBandNum * ri + winBandNum * ci + bi;
+                size_t n = (size_t) srcImg.cols * winBandNum * ri + winBandNum * ci + (winBandNum - 1 - bi);
                 winBuf[m] = srcImg.data[n];
             }
         }
@@ -101,7 +101,7 @@ void QImageShowWidget::ImageBlend(const char* dstImgPath, int posX, int posY)
             for(int bi = 0; bi < winBandNum; bi++)
             {
                 size_t m = (size_t) winWidth * winBandNum * ri + winBandNum * ci + bi;
-                size_t n = (size_t) dstImg.cols * winBandNum * ri + winBandNum * ci + bi;
+                size_t n = (size_t) dstImg.cols * winBandNum * ri + winBandNum * ci + (winBandNum - 1 - bi);
                 winBuf[m] = dstImg.data[n];
             }
         }
@@ -118,7 +118,6 @@ void QImageShowWidget::MVCBlend(int posX, int posY)
     //Step1:找到边界上所有的像素点
     vector<Vector2d> ROIBoundPointList;
     CalBoundPoint(ROIBoundPointList);
-
 
     //Step2:计算范围内每个点的 mean-value coordinates
     size_t srcImgBufNum = static_cast<size_t>(srcImg.cols) * static_cast<size_t>(srcImg.rows);
