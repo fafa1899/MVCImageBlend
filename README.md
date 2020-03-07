@@ -1,4 +1,17 @@
-<!-- TOC -->autoauto- [1. 概述](#1-概述)auto- [2. 实现](#2-实现)auto    - [2.1. 准备](#21-准备)auto    - [2.2. 核心](#22-核心)auto        - [2.2.1. 均值坐标（Mean-Value Coordinates）](#221-均值坐标mean-value-coordinates)auto        - [2.2.2. ROI边界栅格化](#222-roi边界栅格化)auto        - [2.2.3. 核心实现](#223-核心实现)auto        - [2.2.4. 实现中的问题](#224-实现中的问题)auto- [3. 效果](#3-效果)auto    - [3.1. 使用过程](#31-使用过程)auto    - [3.2. 效率](#32-效率)auto- [4. 参考](#4-参考)autoauto<!-- /TOC -->
+[1. 概述](#1-概述)
+[2. 实现](#2-实现)
+- [2.1. 准备](#21-准备)
+- [2.2. 核心](#22-核心)
+  - [2.2.1. 均值坐标（Mean-Value Coordinates）](#221-均值坐标mean-value-coordinates)
+  - [2.2.2. ROI边界栅格化](#222-roi边界栅格化)
+  - [2.2.3. 核心实现](#223-核心实现)
+  - [2.2.4. 实现中的问题](#224-实现中的问题)
+    
+[3. 效果](#3-效果)
+- [3.1. 使用过程](#31-使用过程)
+- [3.2. 效率](#32-效率)
+
+[4. 参考](#4-参考)
 
 # 1. 概述
 泊松融合是图像融合处理效果最好的算法，其来自于2004年Siggraph的经典paper：《Poisson Image Editing》。以这篇文章为发端，很多大神提出了一系列的优化算法。2009年, Zeev Farbman 在的SIGGRAPH上面提出的基于Mean-Value Coordinates方法的泊松融合加速算法《Coordinates for Instant Image Cloning》（文献二）。在这篇文章中，泊松方程被转换成拉普拉斯方程，并且提出了用均值坐标Mean-Value Coordinates来近似求解这个方程，从而达到实时运算的效果。
@@ -192,11 +205,11 @@
 [netlink2]:https://blog.csdn.net/charlee44/article/details/104696765
 [netlink3]:https://blog.csdn.net/charlee44/article/details/104662373
 
-[imglink1]:README_IMG/1.png
-[imglink2]:README_IMG/2.png
-[imglink3]:README_IMG/3.png
-[imglink4]:README_IMG/4.png
-[imglink5]:README_IMG/5.png
-[imglink6]:README_IMG/6.png
-[imglink7]:README_IMG/7.jpg
-[imglink8]:README_IMG/8.png
+[imglink1]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/1.png
+[imglink2]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/2.png
+[imglink3]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/3.png
+[imglink4]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/4.png
+[imglink5]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/5.png
+[imglink6]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/6.png
+[imglink7]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/7.jpg
+[imglink8]:https://raw.githubusercontent.com/fafa1899/MVCImageBlend/master/README_IMG/8.png
