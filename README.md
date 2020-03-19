@@ -196,11 +196,16 @@
 
 # 4. 参考
 [1] [泊松融合及其优化算法](https://zhuanlan.zhihu.com/p/31680396)
+
 [2] [Coordinates for Instant Image Cloning](https://www.cse.huji.ac.il/~danix/mvclone/)
+
 [3] [图像处理（十二）图像融合(1)Seamless cloning泊松克隆-Siggraph 2004](https://blog.csdn.net/hjimce/article/details/45716603)
+
 [4] [多尺度并行坐标插值实时图像克隆算法](http://sjcj.nuaa.edu.cn/sjcjycl/article/html/201901014)
 
 [实现代码](https://github.com/fafa1899/MVCImageBlend)
+
+[基于均值坐标(Mean-Value Coordinates)的图像融合算法的优化实现](https://blog.csdn.net/charlee44/article/details/104979382)
 
 [netlink1]:https://blog.csdn.net/charlee44/article/details/104464262
 [netlink2]:https://blog.csdn.net/charlee44/article/details/104696765

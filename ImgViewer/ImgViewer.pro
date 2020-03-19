@@ -37,7 +37,13 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-LIBS += -LD:/SoftWare/OpenCV/opencv/build/x64/vc15/lib/ -lopencv_world345
+INCLUDEPATH += D:/SoftWare/OpenCV/opencv/build/include \
+    D:/Work/CGALBuild/CGAL-4.14.3/include D:/SoftWare/boost_1_72_0 \
+    D:/Work/CGALBuild/CGAL-4.14.3/Build/include \
+    D:/Work/CGALBuild/CGAL-4.14.3/auxiliary/gmp/include
 
-INCLUDEPATH += D:/SoftWare/OpenCV/opencv/build/include
+LIBS += -LD:/SoftWare/OpenCV/opencv/build/x64/vc15/lib/ -lopencv_world345 \
+    -LD:/Work/CGALBuild/CGAL-4.14.3/Build/lib -lCGAL_Core-vc141-mt-4.14.3 -lCGAL-vc141-mt-4.14.3 \
+    -LD:/Work/CGALBuild/CGAL-4.14.3/auxiliary/gmp/lib -llibgmp-10
+
 #DESTDIR = $$PWD/../bin

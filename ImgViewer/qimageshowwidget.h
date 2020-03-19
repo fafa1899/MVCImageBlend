@@ -33,6 +33,8 @@ protected:
     void Release();
 
     void MVCBlend(int posX, int posY);
+    void MVCBlendOptimize(int posX, int posY); //三角网优化
+
     void CalBoundPoint(std::vector<Vector2d>& ROIBoundPointList);           //栅格化一条线段
     void RasterLine(std::pair<Vector2d, Vector2d> line, std::vector<Vector2d>& linePointList);
 
